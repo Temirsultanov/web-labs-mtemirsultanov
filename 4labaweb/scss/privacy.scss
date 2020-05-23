@@ -1,0 +1,264 @@
+@import 'vars.scss';
+.privacy-main{
+    display: flex;
+    justify-content: center;
+    color: $dark;
+    padding-top: 200px;
+    padding-bottom: 110px;
+    .left{
+        margin-right: 160px;
+        h1{
+            font-weight: 400;
+            font-size: 58px;
+            line-height: 64px;
+        }
+        h6{
+            font-weight: normal;
+            color: $grey;
+            font-size: 18px;
+            margin-top: 25px;
+        }
+    }
+    .right{
+        width: 660px;
+        .first{
+            font-size: 24px;
+            line-height: 40px;
+            &:not(:nth-child(3)){
+                margin-bottom: 55px;
+            }
+            &:nth-child(3){
+                margin-bottom: 40px;
+            }
+        }
+        h3{
+            font-size: 28px;
+            font-weight: bold;
+            line-height: 36px;
+            margin-bottom: 20px;
+            margin-top: 40px;
+        }
+        p{
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 28px;
+        }
+        .p1{
+            margin-top: 20px;
+            margin-bottom: 40px;
+        }
+        .p2{
+            margin-top: 20px;
+            margin-bottom: 25px;
+        }
+        .p3{
+            margin-bottom: 25px;   
+        }
+        .p4{
+            margin-bottom: 40px;
+        }
+        .p5{
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+        .p7{
+            margin-bottom: 40px;
+        }
+        .p8, .p9{
+            margin-top: 20px;   
+            margin-bottom: 40px;
+        }
+        .p10{
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+        .p11{
+            margin-bottom: 30px;
+        }
+        .p12{
+            margin-bottom: 30px;
+        }
+        .p13{
+            margin-bottom: 40px;
+        }
+        .p14{
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+        .p15{
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        .p16{
+            margin-bottom: 40px;
+        }
+        .p18{
+            margin-top: 30px;
+        }
+        .p20{
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        .p22{
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        .p25{
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        .p27{
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        .p29{
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        .p31{
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        .p33{
+            margin-top: 30px;
+        }
+    }
+}
+@media only screen and (max-width: 1400px) {
+    .privacy-main{
+        .left{
+            margin-right: 80px;
+        }
+    }
+}
+@media only screen and (max-width: 1280px) {
+    .privacy-main{
+        display: flex;
+        justify-content: space-around;
+        color: $dark;
+        padding-top: 200px;
+        padding-bottom: 110px;
+        .left{
+            margin-right: 0px;
+            h1{
+                font-weight: 400;
+                font-size: 52px;
+                line-height: 64px;
+            }
+            h6{
+                font-weight: normal;
+                color: $grey;
+                font-size: 18px;
+                margin-top: 20px;
+            }
+        }
+        .right{
+            width: 600px;
+            h3{
+                font-size: 24px;
+                line-height: 40px;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 1024px) {
+    .privacy-main{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        padding-left: 40px;
+        color: $dark;
+        padding-top: 100px;
+        padding-bottom: 110px;
+        .left{
+            margin-right: 0px;
+            width: 670px;
+
+            h1{
+                font-weight: 400;
+                font-size: 58px;
+                line-height: 64px;
+            }
+            margin-bottom: 60px;
+        }
+        .right{
+            width: 670px;
+        }
+    }
+}
+@media only screen and (max-width: 767px){
+    .privacy-main{
+        align-items: center;
+        color: $dark;
+        min-width: 320px;
+        padding-left: 0;
+        padding-top: 20px;
+        padding-bottom: 110px;
+        width: 100%;
+        .left{
+            margin-right: 0px;
+            min-width: 320px;
+            width: calc(100% - 200px);
+
+            h1{
+                font-weight: 400;
+                font-size: 45px;
+                line-height: 64px;
+            }
+            margin-bottom: 40px;
+        }
+        section.right{
+            min-width: 320px;
+            width: calc(100% - 200px);
+            p{
+                font-size: 14px;
+                line-height: 24px;
+            }
+            p.first{
+                font-size: 16px;
+                line-height: 25px;
+                &:not(:nth-child(3)){
+                    margin-bottom: 35px;
+                }
+            }
+            h3{
+                font-size: 20px;
+                line-height: 34px;
+                margin-top: 30px;
+                margin-bottom: 15px;
+            }
+            p.p1{
+                margin-bottom: 30px;
+            }
+            p.p4{
+                margin-bottom: 30px;
+            }
+            p.p5{
+                margin-top: 15px;
+            }
+            p.p7{
+                margin-bottom: 30px;
+            }
+            p.p8{
+                margin-top: 15px;
+                margin-bottom: 30px;
+            }
+            p.p9{
+                margin-top: 15px;
+                margin-bottom: 30px;
+            }
+            p.p10{
+                margin-top: 15px;
+            }
+            p.p13{
+                margin-bottom: 30px;
+            }
+            p.p14{
+                margin-top: 15px;
+            }
+            p.p16{
+                margin-bottom: 30px;
+            }
+        }
+    }
+}

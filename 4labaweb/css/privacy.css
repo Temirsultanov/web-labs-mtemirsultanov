@@ -1,0 +1,200 @@
+.privacy-main {
+  display: flex;
+  justify-content: center;
+  color: #2B2B2B;
+  padding-top: 200px;
+  padding-bottom: 110px; }
+  .privacy-main .left {
+    margin-right: 160px; }
+    .privacy-main .left h1 {
+      font-weight: 400;
+      font-size: 58px;
+      line-height: 64px; }
+    .privacy-main .left h6 {
+      font-weight: normal;
+      color: #A5A5A5;
+      font-size: 18px;
+      margin-top: 25px; }
+  .privacy-main .right {
+    width: 660px; }
+    .privacy-main .right .first {
+      font-size: 24px;
+      line-height: 40px; }
+      .privacy-main .right .first:not(:nth-child(3)) {
+        margin-bottom: 55px; }
+      .privacy-main .right .first:nth-child(3) {
+        margin-bottom: 40px; }
+    .privacy-main .right h3 {
+      font-size: 28px;
+      font-weight: bold;
+      line-height: 36px;
+      margin-bottom: 20px;
+      margin-top: 40px; }
+    .privacy-main .right p {
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 28px; }
+    .privacy-main .right .p1 {
+      margin-top: 20px;
+      margin-bottom: 40px; }
+    .privacy-main .right .p2 {
+      margin-top: 20px;
+      margin-bottom: 25px; }
+    .privacy-main .right .p3 {
+      margin-bottom: 25px; }
+    .privacy-main .right .p4 {
+      margin-bottom: 40px; }
+    .privacy-main .right .p5 {
+      margin-top: 20px;
+      margin-bottom: 30px; }
+    .privacy-main .right .p7 {
+      margin-bottom: 40px; }
+    .privacy-main .right .p8, .privacy-main .right .p9 {
+      margin-top: 20px;
+      margin-bottom: 40px; }
+    .privacy-main .right .p10 {
+      margin-top: 20px;
+      margin-bottom: 30px; }
+    .privacy-main .right .p11 {
+      margin-bottom: 30px; }
+    .privacy-main .right .p12 {
+      margin-bottom: 30px; }
+    .privacy-main .right .p13 {
+      margin-bottom: 40px; }
+    .privacy-main .right .p14 {
+      margin-top: 20px;
+      margin-bottom: 30px; }
+    .privacy-main .right .p15 {
+      margin-top: 30px;
+      margin-bottom: 30px; }
+    .privacy-main .right .p16 {
+      margin-bottom: 40px; }
+    .privacy-main .right .p18 {
+      margin-top: 30px; }
+    .privacy-main .right .p20 {
+      margin-top: 30px;
+      margin-bottom: 30px; }
+    .privacy-main .right .p22 {
+      margin-top: 30px;
+      margin-bottom: 30px; }
+    .privacy-main .right .p25 {
+      margin-top: 30px;
+      margin-bottom: 30px; }
+    .privacy-main .right .p27 {
+      margin-top: 30px;
+      margin-bottom: 30px; }
+    .privacy-main .right .p29 {
+      margin-top: 30px;
+      margin-bottom: 30px; }
+    .privacy-main .right .p31 {
+      margin-top: 30px;
+      margin-bottom: 30px; }
+    .privacy-main .right .p33 {
+      margin-top: 30px; }
+
+@media only screen and (max-width: 1400px) {
+  .privacy-main .left {
+    margin-right: 80px; } }
+
+@media only screen and (max-width: 1280px) {
+  .privacy-main {
+    display: flex;
+    justify-content: space-around;
+    color: #2B2B2B;
+    padding-top: 200px;
+    padding-bottom: 110px; }
+    .privacy-main .left {
+      margin-right: 0px; }
+      .privacy-main .left h1 {
+        font-weight: 400;
+        font-size: 52px;
+        line-height: 64px; }
+      .privacy-main .left h6 {
+        font-weight: normal;
+        color: #A5A5A5;
+        font-size: 18px;
+        margin-top: 20px; }
+    .privacy-main .right {
+      width: 600px; }
+      .privacy-main .right h3 {
+        font-size: 24px;
+        line-height: 40px; } }
+
+@media only screen and (max-width: 1024px) {
+  .privacy-main {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-left: 40px;
+    color: #2B2B2B;
+    padding-top: 100px;
+    padding-bottom: 110px; }
+    .privacy-main .left {
+      margin-right: 0px;
+      width: 670px;
+      margin-bottom: 60px; }
+      .privacy-main .left h1 {
+        font-weight: 400;
+        font-size: 58px;
+        line-height: 64px; }
+    .privacy-main .right {
+      width: 670px; } }
+
+@media only screen and (max-width: 767px) {
+  .privacy-main {
+    align-items: center;
+    color: #2B2B2B;
+    min-width: 320px;
+    padding-left: 0;
+    padding-top: 20px;
+    padding-bottom: 110px;
+    width: 100%; }
+    .privacy-main .left {
+      margin-right: 0px;
+      min-width: 320px;
+      width: calc(100% - 200px);
+      margin-bottom: 40px; }
+      .privacy-main .left h1 {
+        font-weight: 400;
+        font-size: 45px;
+        line-height: 64px; }
+    .privacy-main section.right {
+      min-width: 320px;
+      width: calc(100% - 200px); }
+      .privacy-main section.right p {
+        font-size: 14px;
+        line-height: 24px; }
+      .privacy-main section.right p.first {
+        font-size: 16px;
+        line-height: 25px; }
+        .privacy-main section.right p.first:not(:nth-child(3)) {
+          margin-bottom: 35px; }
+      .privacy-main section.right h3 {
+        font-size: 20px;
+        line-height: 34px;
+        margin-top: 30px;
+        margin-bottom: 15px; }
+      .privacy-main section.right p.p1 {
+        margin-bottom: 30px; }
+      .privacy-main section.right p.p4 {
+        margin-bottom: 30px; }
+      .privacy-main section.right p.p5 {
+        margin-top: 15px; }
+      .privacy-main section.right p.p7 {
+        margin-bottom: 30px; }
+      .privacy-main section.right p.p8 {
+        margin-top: 15px;
+        margin-bottom: 30px; }
+      .privacy-main section.right p.p9 {
+        margin-top: 15px;
+        margin-bottom: 30px; }
+      .privacy-main section.right p.p10 {
+        margin-top: 15px; }
+      .privacy-main section.right p.p13 {
+        margin-bottom: 30px; }
+      .privacy-main section.right p.p14 {
+        margin-top: 15px; }
+      .privacy-main section.right p.p16 {
+        margin-bottom: 30px; } }
+
+/*# sourceMappingURL=privacy.css.map */

@@ -1,0 +1,391 @@
+.contact-header {
+  padding-top: 0; }
+
+.address-mobile {
+  display: none; }
+
+.contact-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #2B2B2B; }
+  .contact-main .contact-section1 {
+    display: flex;
+    margin-top: 100px; }
+    .contact-main .contact-section1 .form {
+      margin-right: 150px; }
+      .contact-main .contact-section1 .form h2 {
+        font-size: 48px;
+        line-height: 56px;
+        font-weight: bold;
+        margin-bottom: 15px; }
+      .contact-main .contact-section1 .form a {
+        font-size: 15px;
+        line-height: 28px;
+        font-weight: bold;
+        margin-bottom: 55px; }
+      .contact-main .contact-section1 .form form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 55px; }
+        .contact-main .contact-section1 .form form input {
+          display: block;
+          border: 0;
+          outline: 0;
+          font-size: 17px;
+          color: #2B2B2B;
+          width: 525px;
+          margin-bottom: 50px;
+          border-bottom: 2px solid #A5A5A5;
+          background-color: transparent;
+          padding: 0 10px 10px 0;
+          transition: .4s; }
+          .contact-main .contact-section1 .form form input::placeholder {
+            color: #A5A5A5;
+            font-size: 17px; }
+          .contact-main .contact-section1 .form form input:hover {
+            border-color: #2B2B2B; }
+          .contact-main .contact-section1 .form form input:invalid:not(:placeholder-shown) {
+            border-color: #F45B53; }
+          .contact-main .contact-section1 .form form input:valid:not(:placeholder-shown) {
+            border-color: #41CE7F; }
+          .contact-main .contact-section1 .form form input:focus {
+            border-color: #0080FF; }
+        .contact-main .contact-section1 .form form textarea {
+          resize: none;
+          width: 100%;
+          border: 0;
+          display: block;
+          box-sizing: border-box;
+          outline: 0;
+          font-size: 17px;
+          color: #2B2B2B;
+          border-bottom: 2px solid #A5A5A5;
+          transition: .4s; }
+          .contact-main .contact-section1 .form form textarea::placeholder {
+            color: #A5A5A5; }
+          .contact-main .contact-section1 .form form textarea:hover {
+            border-color: #2B2B2B; }
+          .contact-main .contact-section1 .form form textarea:invalid:not(:placeholder-shown) {
+            border-color: #F45B53; }
+          .contact-main .contact-section1 .form form textarea:valid:not(:placeholder-shown) {
+            border-color: #41CE7F; }
+          .contact-main .contact-section1 .form form textarea:focus {
+            border-color: #0080FF; }
+        .contact-main .contact-section1 .form form .ajax-button {
+          align-self: flex-start; }
+        .contact-main .contact-section1 .form form .button {
+          background-color: #fff;
+          border-color: #2B2B2B;
+          color: #2B2B2B;
+          cursor: pointer; }
+          .contact-main .contact-section1 .form form .button svg path {
+            stroke: #2B2B2B; }
+          .contact-main .contact-section1 .form form .button:hover {
+            background-color: #2B2B2B;
+            color: white; }
+            .contact-main .contact-section1 .form form .button:hover svg path {
+              stroke: white; }
+          .contact-main .contact-section1 .form form .button.loading:hover {
+            background-color: #fff !important; }
+  .contact-main .contact-section2 {
+    display: flex;
+    margin-bottom: 100px;
+    margin-top: 140px; }
+    .contact-main .contact-section2 .map-side {
+      margin-right: 60px;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+    .contact-main .contact-section2 .adresses-row {
+      display: flex; }
+      .contact-main .contact-section2 .adresses-row:not(:last-child) {
+        margin-bottom: 75px; }
+      .contact-main .contact-section2 .adresses-row .address:nth-child(2) {
+        margin-left: 40px; }
+  .contact-main .mobile-none-address.address200 {
+    margin-left: 40px; }
+  .contact-main .address {
+    width: 300px; }
+    .contact-main .address h5 {
+      font-size: 17px;
+      line-height: 30px;
+      text-transform: uppercase;
+      font-weight: bold;
+      margin-bottom: 15px; }
+    .contact-main .address p {
+      line-height: 40px;
+      font-size: 20px; }
+  .contact-main .address-row1-russia {
+    display: none; }
+  .contact-main .address-row2-neth {
+    display: none; }
+  .contact-main .address-map-israel {
+    display: none; }
+  .contact-main .contact-india {
+    align-self: flex-end;
+    margin-top: 175px;
+    margin-bottom: 0;
+    width: 270px; }
+
+@media only screen and (max-width: 1400px) {
+  .contact-main .contact-section1 .form form input {
+    width: 590px; }
+  .contact-main .contact-section1 .form {
+    margin-right: 50px; }
+  .contact-main .contact-image img {
+    width: 600px; }
+  .contact-main .contact-section2 .map-side .map-image img {
+    width: 600px; }
+  .contact-main .contact-section2 .map-side .contact-india {
+    margin-top: 263px; }
+  .contact-main .contact-section2 .adresses .address200 {
+    width: 200px; }
+    .contact-main .contact-section2 .adresses .address200 p {
+      width: 200px; } }
+
+@media only screen and (max-width: 1280px) {
+  .contact-main .contact-section1 {
+    margin-top: 100px; }
+    .contact-main .contact-section1 .form {
+      width: 450px; }
+      .contact-main .contact-section1 .form h2 {
+        font-size: 36px;
+        line-height: 55px;
+        margin-bottom: 50px; }
+      .contact-main .contact-section1 .form a {
+        font-size: 15px;
+        line-height: 28px;
+        font-weight: bold;
+        margin-bottom: 55px; }
+      .contact-main .contact-section1 .form form input {
+        width: 100%;
+        box-sizing: border-box; }
+      .contact-main .contact-section1 .form form button {
+        font-size: 14px; }
+        .contact-main .contact-section1 .form form button.loading {
+          font-size: 0 !important; }
+    .contact-main .contact-section1 .contact-image {
+      width: 450px;
+      height: 660px;
+      position: relative;
+      overflow: hidden; }
+      .contact-main .contact-section1 .contact-image img {
+        min-height: 100%;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        width: 578px; }
+  .contact-main .contact-section2 {
+    display: flex;
+    margin-bottom: 100px;
+    margin-top: 140px; }
+    .contact-main .contact-section2 .map-side {
+      margin-right: 60px;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .contact-main .contact-section2 .map-side .map-image {
+        width: 480px; }
+        .contact-main .contact-section2 .map-side .map-image img {
+          width: 100%; }
+      .contact-main .contact-section2 .map-side .contact-india {
+        align-self: flex-end;
+        margin-top: 181px;
+        margin-bottom: 0;
+        width: 200px; }
+    .contact-main .contact-section2 .adresses-row {
+      display: flex;
+      width: 450px; }
+      .contact-main .contact-section2 .adresses-row:not(:last-child) {
+        margin-bottom: 75px; }
+      .contact-main .contact-section2 .adresses-row .address:nth-child(2) {
+        margin-left: 40px; }
+  .contact-main .address {
+    width: 250px; }
+    .contact-main .address h5 {
+      font-size: 17px;
+      line-height: 30px;
+      text-transform: uppercase;
+      font-weight: bold;
+      margin-bottom: 15px; }
+    .contact-main .address p {
+      line-height: 26px;
+      font-size: 16px; } }
+
+@media only screen and (max-width: 1024px) {
+  .contact-main .contact-section1 {
+    justify-content: space-between; }
+    .contact-main .contact-section1 .form {
+      width: 350px; }
+      .contact-main .contact-section1 .form form input::placeholder {
+        font-size: 14px; }
+    .contact-main .contact-section1 .contact-image {
+      width: 350px; }
+  .contact-main .contact-section2 {
+    flex-direction: column-reverse;
+    width: 100%; }
+    .contact-main .contact-section2 .map-side {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-around;
+      margin-right: 0;
+      flex-direction: row-reverse; }
+      .contact-main .contact-section2 .map-side .map-image {
+        width: 440px; }
+      .contact-main .contact-section2 .map-side .contact-india {
+        margin-top: 0;
+        display: none; }
+      .contact-main .contact-section2 .map-side .address-map-israel {
+        display: block;
+        width: 220px; }
+    .contact-main .contact-section2 .adresses {
+      width: 100%; }
+      .contact-main .contact-section2 .adresses .adresses-row {
+        width: 100%;
+        justify-content: space-evenly; }
+        .contact-main .contact-section2 .adresses .adresses-row .address-row1-russia, .contact-main .contact-section2 .adresses .adresses-row .address-row2-neth {
+          display: block; }
+        .contact-main .contact-section2 .adresses .adresses-row .address {
+          width: 220px;
+          margin-left: 0; }
+    .contact-main .contact-section2 .adresses-row-russia-israel {
+      display: none; } }
+
+@media only screen and (max-width: 767px) {
+  .address-mobile {
+    display: block; }
+  .contact-main .contact-section1 {
+    flex-direction: column;
+    margin-top: 0;
+    width: 100%;
+    align-items: center; }
+    .contact-main .contact-section1 .form {
+      width: calc(100% - 60px);
+      margin-right: 0; }
+      .contact-main .contact-section1 .form h2 {
+        font-size: 32px;
+        line-height: 42px;
+        margin-bottom: 20px; }
+      .contact-main .contact-section1 .form h2 + a {
+        font-size: 15px;
+        line-height: 28px; }
+      .contact-main .contact-section1 .form form {
+        padding-top: 40px; }
+        .contact-main .contact-section1 .form form button {
+          width: 100%;
+          justify-content: center; }
+          .contact-main .contact-section1 .form form button svg {
+            height: 11px;
+            margin-top: 5px; }
+    .contact-main .contact-section1 .contact-image {
+      height: 30vw;
+      min-height: 200px;
+      width: 100%;
+      margin-top: 40px;
+      margin-bottom: 40px; }
+      .contact-main .contact-section1 .contact-image img {
+        top: 50%;
+        width: 100%;
+        transform: translate(-50%, -60%); }
+  .contact-main .contact-section2 {
+    margin-top: 0; }
+    .contact-main .contact-section2 .adresses {
+      background-image: url(../images/contact/map.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: 50% 70%; }
+      .contact-main .contact-section2 .adresses .adresses-row {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 0; }
+        .contact-main .contact-section2 .adresses .adresses-row:nth-last-child(2) {
+          display: none; }
+        .contact-main .contact-section2 .adresses .adresses-row:nth-last-child(1) {
+          display: none; }
+        .contact-main .contact-section2 .adresses .adresses-row .address {
+          width: 300px;
+          margin-bottom: 30px; }
+        .contact-main .contact-section2 .adresses .adresses-row .mobile-none-address {
+          display: none; }
+    .contact-main .contact-section2 .map-side .map-image {
+      display: none; }
+    .contact-main .contact-section2 .map-side .address-map-israel {
+      width: 300px;
+      display: none; } }
+
+.ajax-button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 175px;
+  margin-top: 50px;
+  height: 59px; }
+
+.submit {
+  -webkit-appearance: none  !important;
+  -moz-appearance: none !important;
+  appearance: none;
+  background-color: #fff !important;
+  border: 4px solid #2B2B2B !important;
+  border-radius: 0px !important;
+  color: #2B2B2B !important;
+  font-size: 17px !important;
+  cursor: pointer !important;
+  outline: none !important; }
+
+.submit:hover {
+  background-color: #222222 !important;
+  color: #fff !important; }
+
+.loading {
+  font-size: 0 !important;
+  width: 30px !important;
+  height: 30px !important;
+  border-radius: 15px !important;
+  padding: 0 !important;
+  border: 4px solid #222222 !important;
+  border-bottom: 3px solid rgba(255, 255, 255, 0) !important;
+  border-left: 3px solid rgba(255, 255, 255, 0) !important;
+  background-color: transparent !important;
+  animation-name: rotateAnimation;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  animation-delay: 0.2s;
+  -webkit-animation-delay: 0.2s;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite; }
+  .loading p {
+    font-size: 0 !important; }
+  .loading svg {
+    width: 0; }
+  .loading :hover {
+    background-color: #fff !important; }
+
+@keyframes rotateAnimation {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+
+.fa {
+  color: #222222;
+  font-size: 16px !important;
+  position: absolute;
+  left: 45%;
+  -webkit-transform: scaleX(0) !important;
+  transform: scaleX(0) !important; }
+
+.finish {
+  -webkit-transform: scaleX(1) !important;
+  transform: scaleX(1) !important; }
+
+.hide-loading {
+  opacity: 0 !important;
+  -webkit-transform: rotate(0deg) !important;
+  transform: rotate(0deg) !important;
+  -webkit-transform: scale(0) !important;
+  transform: scale(0) !important; }
+
+/*# sourceMappingURL=contact.css.map */
