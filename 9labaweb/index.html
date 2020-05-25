@@ -18,7 +18,7 @@
                 <header class="header d-flex align-items-center">
                         <div class="header__logo wow fadeInUp col-mb-2 col-sm-4"><img src="logo.png" alt="shopno logo"></div>
                         <nav class="header__nav  ml-auto">
-                            <div class="wow fadeInUp burger-menu" role="button" tabindex="0">
+                            <div class="wow fadeInUp burger-menu" aria-label="Menu-button" role="button" tabindex="0">
                                 <div class="burger"></div>
                                 <div class="burger"></div>
                                 <div class="burger"></div>
@@ -86,6 +86,42 @@
                 </div>
             </div>
         </section>
+        <form class="form" method="post">
+            <fieldset>
+                <legend>Регистрация</legend>
+                <label for="name">
+                    Введите ваше имя: 
+                    <input type="text" id="name" aria-label="Введите ваше имя" name="name" placeholder="ваше имя">
+                </label>
+                <br>
+                <label for="surname">
+                    Введите вашу фамилию: 
+                    <input type="text" id="surname" aria-label="Введите вашу фамилию" name="surname" placeholder="ваша фамилия">
+                </label>
+                <br>
+                <label for="phone">
+                    Введите ваш телефон: 
+                    <input type="phone" aria-label="Введите ваш телефон" id="phone" name="phone" placeholder="ваш телефон">
+                </label>
+                <br>
+                <label for="email">
+                    Введите ваш email: 
+                    <input type="email" aria-label='Введите вашу почту' id="email" name="email" placeholder="ваша почта">
+                </label>
+                <br>
+                Пол: 
+                <label for="radio">
+                    муж.
+                    <input name="sex" aria-label="Мужской пол" id="radio1" value="male" type="radio">
+                </label>
+                <label for="radio">
+                    жен.
+                    <input name="sex" aria-label="Женский пол" id="radio2" value="female" type="radio" checked>
+                </label>
+                <br>
+                <input type="submit" aria-label="Зарегистрироваться" value="Зарегистрироваться">
+            </fieldset>
+        </form>
     </main>
     <footer></footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>

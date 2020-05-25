@@ -1,0 +1,1633 @@
+@font-face{
+    font-family: 'Colfax Regular';
+    src: url(fonts/Colfax-Regular.otf) format('opentype');
+}
+@font-face{
+    font-family: 'Colfax Medium';
+    src: url(fonts/Colfax-Medium.otf) format('opentype');
+}
+@font-face{
+    font-family: 'Colfax Bold';
+    src: url(fonts/Colfax-Bold.otf) format('opentype');
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Colfax Regular';
+}
+ul{
+    list-style: none;
+    margin: 0;
+    text-transform: uppercase;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+section{
+    width: 100%;
+}
+.container{
+    width: 1160px;
+}
+.logo-menu{
+    display: flex;
+    justify-content: space-between;
+}
+.menu-header-wrap{
+    /* background-color: red; */
+    height: 120px;
+    padding-top: 45px;
+    display: flex;
+    justify-content: flex-end;
+}
+.popup-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.45);
+    position: fixed;
+}
+.popup{
+    width: 612px;
+    height: 377px;
+    border-radius: 11px;
+    
+    padding: 40px;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+.popup form{
+    display: flex;
+    flex-direction: column;
+}
+.close{
+    cursor: pointer;
+}
+.popup_title{
+    height: 60px;
+    margin: 0;
+    font-size: 23px;
+    line-height: 60px;
+    font-family: 'Colfax Medium';
+    font-weight: 500;
+    color: #1e375a;
+}
+.popup_title-close{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+input{
+    -webkit-appearance: none;
+}
+.popup input{
+    height: 60px;
+    box-sizing: border-box;
+    display: block;
+    transition: .2s;
+    border-radius: 11px;
+}
+.names{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+    margin-top: 16px;
+}
+.popup input[type="submit"]{
+    background-color: #3495ff;
+    border: 0;
+    color: White;
+    box-shadow:  0px 0px 0px 2px #3495ff inset, 0px 0px 0px 4px #3495ff inset;
+    font-size: 20px;
+    letter-spacing: 0.48px;
+    font-family: 'Colfax Medium';
+    font-weight: 500;
+    margin-top: 25px;
+    cursor: pointer;
+}
+.popup input[type="submit"]:hover{
+    box-shadow:  0px 0px 0px 2px #3495ff inset, 0px 0px 0px 4px #fff inset;  
+}
+.popup input[type="submit"]:active{
+    filter: brightness(1.2);
+    outline: 0;
+}
+.popup input:not([type="submit"]):hover{
+    border-color: #1e345a;
+}
+.popup input:not([type="submit"]):focus{
+    border-color: #3495ff;
+    outline: 0;
+}
+
+.popup input:not([type="submit"]){
+    border: 1px solid #e5e5e5;
+    padding-left: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 20px;
+    letter-spacing: 0.48px;
+    color: #323232;
+}
+.popup input:not([type="submit"])::placeholder{
+    opacity: 0.2;
+}
+.popup input[type="text"]{
+    width: 260px;
+}
+.section1{
+    background-image: url(img/header-bg.png);
+    background-size:cover;
+    display: flex;
+    /* background-position: -20% 0; */
+    justify-content: center;
+    padding-bottom: 170px;
+}
+.menu-header{
+    display: flex;
+    font-family: 'Colfax Medium';
+    letter-spacing: 1.39px;
+    font-size: 13px;
+    color: #1e375a;
+    font-weight: 500;
+    opacity: 0.9;
+}
+.menu-header li:not(:first-child){
+    margin-left: 55px;
+}
+.logo{
+    padding-top: 35px;
+}
+.mainscreen-content{
+    /* display: flex; */
+    justify-content: space-between;
+}
+h1{
+    font-size: 46px;
+    color: #1e375a;
+    line-height: 1.3;
+    font-family: 'Colfax Medium';
+    line-height: 60px;
+    font-weight: 500;
+    width: 490px;
+    margin-top: 50px;
+    margin-bottom: 35px;
+}
+p{
+    color: #5C5C5C;
+    font-size: 20px;
+    letter-spacing: 0.48px;
+    line-height: 30px;
+    /* opacity: 0.8; */
+    width: 465px;
+    font-weight: 400;
+}
+.buttons-header{
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    letter-spacing: 1.23px;
+    font-family: 'Colfax Bold';
+    margin-bottom: 180px;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #1e375a;
+}
+.download-header{
+    color: white;
+    background-color: #fff;
+    box-shadow: 0 2px 10px 0 rgba(52, 149, 255, 0.1);
+    background-color: #3495ff;
+    box-shadow:  0px 0px 0px 2px #3495ff inset, 0px 0px 0px 4px #3495ff inset;
+    border-radius: 8px;
+    padding-top: 23px;
+    margin-right: 50px;
+    padding-bottom: 23px;
+    width: 230px;
+    transition: .2s;
+
+    text-align: center;
+}
+.test-header{
+    color: #1e375a;
+}
+.companies-header{
+    display: flex;
+}
+.company-header{
+    margin-right: 40px;
+}
+.section2{
+    display: flex;
+    align-items: center;
+    margin-top: 60px;
+    flex-direction: column;
+    background-image: url(img/section2-bg.svg);
+    background-size: cover;
+}
+.block1{
+    display: flex;
+    justify-content: space-between;
+}
+h2{
+    font-size: 36px;
+    color: #1e375a;
+    font-family: 'Colfax Medium';
+    font-weight: 500;
+    margin: 0;
+    margin-bottom: 30px;
+}
+.block1_photos{
+    display: flex;
+}
+.block1_photo{
+    margin-right: 9px;
+}
+.block1_photos img{
+    display: block;
+}
+.block2{
+    margin-top: 250px;
+}
+.features{
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+}
+.feature-item_text{
+    font-size: 16px;
+    width: 100%;
+    margin-top: 0;
+    opacity: 0.8;
+    line-height: 1.25;
+    letter-spacing: 0.39px;
+    
+}
+.feature-item_title{
+    font-size: 23px;
+    line-height: 60px;
+    color: #1e375a;
+    font-family: 'Colfax Medium';
+    font-weight: 500;
+    margin-top: 25px;
+    margin-bottom: 7px;
+}
+.feature-item{
+    width: 350px;
+}
+.section3{
+    justify-content: center;
+    display: flex;
+    background-image: url(img/section3-bg.svg);
+    background-size: cover;
+    background-position: 0 100%;
+    padding-bottom: 150px;
+}
+.consolelog{
+    display: flex;
+    justify-content: space-between;
+}
+.consolelog_phones{
+    display: flex;
+}
+.section3{
+    margin-top: 190px;
+}
+.consolelog_content p{
+    width: 355px;
+    margin-top: 0;
+}
+.consolelog_content{
+    margin-top: 90px;
+}
+.consolelog_content h2{
+    margin-bottom: 15px;
+}
+.phone2{
+    margin-top: 70px;
+    margin-left: 30px;
+}
+.consolelog_content a{
+    letter-spacing: 1.23px;
+    font-family: 'Colfax Bold';
+    font-size: 14px;
+    color: white;
+    text-transform: uppercase;
+    width: 230px;
+    display: block;
+    text-align: center;
+    /* padding-top: 25px; */
+    /* padding-bottom: 25px; */
+    line-height: 60px;
+    transition: .2s;
+    height: 60px;
+    margin-top: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px 0 rgba(52, 149, 255, 0.1);
+    background-color: #3495ff;
+    box-shadow:  0px 0px 0px 2px #3495ff inset, 0px 0px 0px 4px #3495ff inset;
+}
+.section4{
+    background-image: url(img/section4.svg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+.commits{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.commits_title{
+    text-align: center;
+    font-size: 46px;
+    margin-top: 0;
+    margin-bottom: 35px;
+    line-height: 60px;
+    width: 490px;
+}
+.commits_text{
+    width: 575px;
+    margin-top: 0;
+    text-align: center;    
+    margin-bottom: 0;
+}
+.commits_box{
+    width: 800px;
+    display: flex;
+    margin-top: 100px;
+    height: 397px;
+    border-radius: 12px;
+    border: solid 1px #eeeeef;
+    background-color: #fff;
+}
+.commit{
+    display: flex;
+    margin-bottom: 20px;
+}
+.commit p{
+    width: auto;
+}
+.commits_box h4{
+    font-size: 23px;
+    font-weight: 500;
+    font-family: 'Colfax Medium';
+    color: #1e375a;
+    margin-top: 20px;
+}
+.commits_box__right h4{
+    opacity: 0.2;
+    margin-bottom: 30px;
+}
+.commits-box_left h4{
+    margin-bottom: 28px;
+}
+.commits_box__left{
+    border-right: 1px solid #eeeeef;
+    padding-left: 20px;
+    width: 260px;
+    box-sizing: border-box;
+    position: relative;
+}
+.arrow-version{
+    position: absolute;
+    z-index: 0;
+    transition: transform .3s;
+    top: 60px;
+    left: -10px;
+}
+.commits_box__right{
+    padding-left: 38px;
+    position: relative;
+    width: 540px;
+}
+.version{
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Colfax Medium';
+    color: #3495ff;
+    z-index: 2;
+    position: relative;
+    cursor: pointer;
+    transition: .1s .1s;
+    margin-bottom: 44px;
+}
+.version-description{
+    font-size: 10px;
+    font-weight: 400;
+    font-family: 'Colfax Regular';
+}
+.version.active{
+    color: white;
+    cursor: text;
+}
+.nail{
+    position: absolute;
+    top: -4px;
+    right: -16px;
+}
+.commit_name{
+    font-size: 14px;
+    margin: 0;
+    margin-left: 10px;
+    letter-spacing: 0.34px;
+    opacity: 0.5;
+    line-height: 14px;
+}
+.commit_number{
+    color: #3495ff;
+    line-height: 14px;
+    margin: 0;
+    font-family: 'PT Mono';
+    font-size: 14px;
+    transition: .2s;
+    letter-spacing: 0.34px;
+}
+.commit_number:hover{
+    color: #1e345a;
+}
+.transform-active-version2{
+    transform: translateY(61px);
+}
+.commit-none{
+    display: none;
+}
+.invitation{
+    display: flex;
+    align-self: center;
+    margin-top: 250px;
+    justify-content: space-between;
+}
+.invitation_photos img{
+    width: 440px;
+}
+.invitation_title{
+    width: 489px;
+    margin-bottom: 35px;
+    font-size: 46px;
+    margin-left: 3px;
+    line-height: 1.3;
+}
+.invitation_text{
+    width: 585px;
+    margin-left: 3px;
+}
+#email::placeholder{
+    opacity: 0.2;
+    font-size: 20px;
+    font-family: 'Colfax Regular';
+    color: #323232;
+    letter-spacing: 0.48px;
+}
+#email{
+    padding-top: 20px;
+    box-sizing: border-box;
+    width: 360px;
+    height: 60px;
+    border: 1px solid #e5e5e5;
+    transition: .2s;
+    border-top-left-radius: 11px;
+    border-bottom-left-radius: 11px;
+    padding-bottom: 20px;
+    padding-left: 30px;  
+    font-size: 20px;
+    font-family: 'Colfax Regular';
+    color: #323232;
+    font-weight: 400;
+    padding-right: 20px;
+    letter-spacing: 0.48px; 
+}
+#email:focus{
+    outline: none;
+    border: 1px solid #3495ff;
+}
+.invite{
+    display: flex;
+    margin-top: 40px;
+    align-items: center;
+}
+#send_button{
+    width: 180px;
+    margin-left: -10px;
+    height: 60px;
+    -webkit-appearance: none;
+    cursor: pointer;
+    border: 0;
+    color: white;
+    font-family: 'Colfax Medium';
+    font-size: 20px;
+    box-sizing: border-box;
+    letter-spacing: 0.48px;
+    border-radius: 11px;
+    transition: .2s;
+    box-shadow:  0px 0px 0px 2px #3495ff inset, 0px 0px 0px 4px #3495ff inset;
+    background-color: #3495ff;
+}
+#send_button:hover{
+    box-shadow:  0px 0px 0px 2px #3495ff inset, 0px 0px 0px 4px #fff inset;
+}
+#send_button:active{
+    filter: brightness(1.2);
+}
+#send_button:focus{
+    outline: 0;
+}
+
+.arrow-right{
+    display: inline-block;
+    margin-left: 4px;
+}
+.torelease{
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.48px;
+    color: #323232;
+    margin-left: 8px;
+    margin-top: 40px;
+    display: block;
+    font-family: 'Colfax Medium';
+}
+/* --------------------------------------------------- */
+/* -------------------- F O O T E R ------------------ */
+/* --------------------------------------------------- */
+footer{
+    background-image: url(img/footer-bg.svg);
+    background-size: cover;
+    width: 100%;
+    padding-top: 325px;
+    display: flex;
+    margin-top: 200px;
+    padding-bottom: 110px;
+    justify-content: center;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+}
+.menu-footer{
+    display: flex;
+}
+.menu-footer_item h5{
+    text-transform: uppercase;
+    font-family: 'Colfax Medium';
+    font-weight: 500;
+    color: #323232;
+    letter-spacing: 1px;
+    margin-bottom: 50px;
+    font-size: 16px;
+    margin-top: 10px;
+}
+.menu-footer_item ul{
+    margin: 0;
+    padding: 0;   
+}
+.menu-footer_item:not(:last-of-type){
+    margin-right: 100px;
+}
+.menu-footer_item ul li{
+    font-family: 'Colfax Regular';
+    letter-spacing: 0.48px;
+    font-size: 16px;
+    color: #323232;
+    text-transform: none;
+    margin-bottom: 25px;
+}
+.logo-footer{
+    margin-bottom: 48px;
+}
+.logo-copy p{
+    font-size: 16px;
+    width: auto;
+    letter-spacing: 0.48px;
+    line-height: 1;
+    color: #323232;
+}
+.copy{
+    opacity: 0.6;
+}
+.author{    
+    margin-top: 25px;
+}
+.author span{
+    opacity: 0.6;
+}
+.author-link span{
+    opacity: 1;
+}
+@media only screen and (max-width: 1201px) {
+    .container{
+        width: 932px;
+    }
+    .block1_photos img{
+        width: 140px;
+    }
+    .section1{
+        padding-bottom: 200px;
+    }
+    h2{
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+    h1{
+        font-size: 42px;
+        width: 440px;
+        line-height: 54px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    p{
+        font-size: 18px;
+        line-height: 26px;
+        width: 400px;
+    }
+    .buttons-header{
+        font-size: 12px;
+        margin-bottom: 100px;
+    }
+    .download-header{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        width: 200px;
+    }
+    .feature-item{
+        width: 280px;
+    }
+    .block2{
+        margin-top: 200px;
+    }
+    .section2{
+        margin-top: 0px;
+    }
+    .feature-item-photo{
+        height: 100px;
+    }
+    .feature-item_title{
+        margin-top: 15px;
+        line-height: 45px;
+    }
+    .feature-item_text{
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .consolelog_content a{
+        font-size: 12px;
+        line-height: 50px;
+        height: 50px;
+        width: 190px;
+        margin-top: 30px;
+    }
+    .consolelog_content{
+        margin-top: 70px;
+    }
+    .phone2{
+        margin-top: 55px;
+    }
+    .consolelog_content p{
+        width: 310px;
+        font-size: 16px;
+    }
+    .phone img{
+        width: 240px;
+    }
+    .commits_title{
+        font-size: 42px;
+        line-height: 55px;
+        margin-bottom: 25px;
+    }
+    .commits_box{
+        width: 700px;
+        height: 350px;
+        margin-top: 70px;
+    }
+    .nail{
+        width: 25px;
+        right: -10px;
+    }
+    .commits_box__right{
+        width: 440px;
+        box-sizing: border-box;
+    }
+    .commits_text{
+        font-size: 16px;
+    }
+    .invitation{
+        margin-top: 200px;
+    }
+    .invitation_title{
+        font-size: 42px;
+        margin-bottom: 25px;
+        width: 400px;
+    }
+    .invitation_text{
+        width: 450px;
+        font-size: 18px;
+    }
+    .invitation_photos img{
+        width: 330px;
+    }
+    #email::placeholder{
+        font-size: 18px;
+    }
+    #email{
+        height: 55px;
+        width: 320px; 
+        font-size: 18px;
+        padding-left: 25px;
+    }
+    .torelease{
+        font-size: 18px;
+    }
+    #send_button{
+        width: 150px;
+        font-size: 18px;
+        height: 55px;
+    }
+    .menu-footer_item:not(:last-of-type){
+        margin-right: 70px;
+    }
+    footer{
+        margin-top: 0;
+    }
+    .menu-footer_item h5{
+        font-size: 14px;
+    }
+    .menu-footer_item ul li{
+        font-size: 14px;
+    }
+    .logo-copy p{
+        font-size: 14px;
+    }
+}
+@media only screen and (max-width:992px){
+    .container{
+        width: 728px;
+    }
+    .section1{
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        padding-bottom: 0;
+    }
+    .block1{
+        display: flex;
+        flex-direction: column;
+    }
+    .consolelog_phones img{
+        width: 200px;
+    }
+    #email{
+        -webkit-appearance: none;
+    }
+    .phone2{
+        margin-left: 0;
+    }
+    .invitation_photos img{
+        width: 270px;
+    }
+    .invitation_text{
+        font-size: 16px;
+        width: 400px;   
+    }
+    .feature-item_title{
+        font-size: 20px;
+    }
+    .feature-item{
+        width: 220px;
+    }
+    .block1_photos{
+        margin-top: 40px;
+    }
+    .block1_photos img{
+        width: 200px;
+    }
+    .block1_photo{
+        margin-right: 30px;
+    }
+    .block2{
+        margin-top: 200px;
+    }
+    .section2{
+        margin-top: 150px;
+    }
+    
+    .invitation_title{
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+    #email{
+        padding-left: 15px;
+        width: 260px;
+        font-size: 16px;
+        height: 50px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    #send_button{
+        width: 120px;
+        height: 50px;
+        font-size: 16px;
+    }
+    #email::placeholder{
+        font-size: 16px;
+    }
+    .menu-footer_item:not(:last-of-type){
+        margin-right: 50px;
+    }
+}
+@media only screen and (max-width:767px){
+    .popup{
+        width: 500px;
+        height: 470px;
+        padding: 40px;
+    }
+    .popup_title{
+        height: 60px;
+        font-size: 23px;
+        line-height: 60px;
+    }
+    .popup input{
+        height: 60px;
+        width: 100%;
+        margin-bottom: 16px;
+    }
+    .names{
+        margin-bottom: 0px;
+        margin-top: 16px;
+        flex-direction: column;
+        width: 100%;
+    }
+    .popup input[type="submit"]{
+        margin-top: 25px;
+    }
+    .popup input[type="text"]{
+        width: 100%;
+    }
+    .container{
+        width: 535px;
+    }
+    .block1_photos img{
+        width: 150px;
+    }
+    .block1_photo{
+        margin-right: 20px;
+    }
+    .consolelog{
+        display: flex;
+        flex-direction: column;
+    }
+    .phone2{
+        margin-top: 0;
+    }
+    .section1{
+        background-image: url(img/section2-bg2.svg);
+        background-size: 200%;
+        background-position: 0px 160px;
+    }
+    .consolelog_content{
+        margin-top: 0;
+    }
+    .block2{
+        margin-top: 150px;
+    }
+    .nail{
+        display: none;
+    }
+    .invitation{
+        flex-direction: column;
+    }
+    .footer{
+        flex-direction: column-reverse;
+    }
+    .features{
+        display: flex;
+        flex-direction: column;
+    }
+    .feature-item{
+        width: auto;
+        margin-top: 60px;
+        display: flex;
+    }
+    .feature-item_title{
+        font-size: 23px;
+        margin-top: 0;
+    }
+    .feature-content{
+        margin-left: 50px;
+    }
+    .feature-item-photo{
+        height: auto;
+        min-width: 130px;
+    }
+    .consolelog_phones{
+        margin-top: 50px;
+        margin-left: -15px;
+    }
+    .consolelog_phones img{
+        width: 260px;
+    }
+    .phone2{
+        margin-top: -115px;
+        margin-left: 10px;
+    }
+    .arrow-version{
+        background-color: #3495ff;
+        width: 170px;
+        height: 45px;
+        /* position: relative; */
+        border-radius: 10px;
+        top: 15px;
+        left: 95px;
+    }
+    .arrow-version:after{
+        content: '';
+        width: 0;
+        height: 0;
+        border-top: 20px solid #3495ff;
+        border-left: 20px solid transparent;
+        position: absolute;
+        top: 35px;
+        left: 65px;
+        border-right: 20px solid transparent;
+    }
+    .commits_box{
+        width: 90%;
+        /* border-radius: 0; */
+        flex-direction: column;
+        height: 400px;
+    }
+    .commits_box__left{
+        width: 100%;
+        border-bottom: 1px solid #eeeeef;
+        display: flex;
+        border-right: 0;
+    }
+    .version{
+        margin-bottom: 0;
+        margin-left: 50px;
+    }
+    .commits_box__right{
+        width: 100%;
+        padding-left: 20px;
+    }
+    .arrow-version img{
+        display: none;
+    }
+    
+    .commits_title{
+        font-size: 38px;
+        line-height: 48px;
+        width: 470px;
+        margin-bottom: 20px;
+    }
+    .commits_text{
+        width: 420px;
+    }
+    .invitation{
+        margin-top: 150px;
+    }
+    .invitation_photos{
+        margin-top: 40px;
+    }
+    .invitation_photos img{
+        width: 400px;
+    }
+    .transform-active-version2{
+        transform: translate(188px, 0);
+    }
+    .logo-copy{
+        margin-top: 50px;
+    }
+    .menu-footer{
+        justify-content: space-between;
+    }
+    .logo-footer{
+        margin-bottom: 28px;
+    }
+    .menu-footer_item:not(:last-of-type){
+        margin-right: 30px;
+    }
+}
+.menu{
+    color: #1e375a;
+    display: none;
+}
+.burger{
+    width: 30px;
+    height: 30px;
+    border: 0;
+    background-color: #fff;
+    outline: 0;
+    cursor: pointer;
+    margin-top: 30px;
+    box-sizing: border-box;
+    padding: 0;
+    display: none;
+}
+.burger-top{
+    width: 30px;
+    transition: .2s;
+    border-radius: 5px;
+    height: 3px;
+    background-color: #1e375a;
+}
+.burger-bottom{
+    width: 20px;
+    transition: .2s;
+    margin-top: 5px;
+    margin-left: 10px;
+    border-radius: 5px;
+    height: 3px;
+    background-color: #1e375a;  
+}
+.body-oveflow{
+    overflow: hidden;
+}
+.burger-bottom-active{
+    width: 30px;
+    transform: translate(-8px, -5px) rotate(-45deg);   
+}
+.burger-top-active{
+    transform: translate(0, 8px) rotate(45deg);
+}
+@media only screen and (max-width:575px){
+    .popup{
+        width: 400px;
+    }   
+    .popup input:not([type="submit"])::placeholder{
+        opacity: 0.5;
+        border-color: #bdbbbb;
+    }
+    .container{
+        width: 420px;
+    }
+    .menu-footer_item:not(:last-of-type){
+        margin-right: 50px;
+    }
+    .menu-footer{
+        flex-wrap: wrap;
+        justify-content: start;
+    }
+    footer{
+        padding-top: 250px;
+    }
+    .menu-footer_item:last-of-type{
+        margin-left: 80px;
+        margin-top: 40px;
+    }
+    .menu-footer_item:nth-of-type(2){
+        margin-left: 20px;
+    }
+    .menu-footer_item:nth-of-type(3){
+        margin-top: 40px;
+    }
+    .burger{
+        display: block;
+    }
+    .logo-menu{
+        height: 60px;
+        position: relative;
+        z-index: 5;
+    }
+    .menu-header{
+        display: none;
+    }
+    .menu-mobile{
+        position: absolute;
+        height: 100vh;
+        width: 100%;
+        transition: .2s;
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        top: 0;
+        z-index: 3;
+        background: #fff;
+        background-image: url(img/section3-bg.svg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        left: 0;
+        transform: translateY(-100%);
+    }
+    .transform-active-version2{
+        transform: translate(168px, 0);
+    }
+    .mainscreen-content{
+        margin-top: 100px;
+    }
+    .feature-content{
+        margin-left: 35px;
+    }
+    .version{
+        margin-left: 30px;
+    }
+    .arrow-version{
+        left: 75px;
+    }
+    h1{
+        font-size: 36px;
+        width: 100%;
+        line-height: 46px;
+        margin-top: 0;
+    }
+    .block1_photos img{
+        width: 120px;
+    }
+    .consolelog_phones img{
+        width: 220px;
+    }
+    .block1_photos{
+        margin-top: 20px;
+    }
+    .feature-item:first-of-type{
+        margin-top: 0;
+    }
+    .menu{
+        width: 480px;
+        /* background-color: #fff; */
+        padding-left: 0;
+        display: block;
+        padding-top: 100px;
+        text-align: center;
+    }
+    .menu li{
+        margin-top: 20px;
+        font-size: 30px;
+    }
+}
+@media only screen and (max-width:460px){
+    .container{
+        width: 320px;
+    }
+    .popup{
+        width: 320px;
+        padding: 30px;
+        height: 450px;
+    }
+    .popup input:not([type="submit"]){
+        font-size: 16px;
+        padding-left: 20px;
+    }
+    .popup_title{
+        font-size: 20px;
+    }
+    h1{
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+    p{
+        width: 320px;
+        font-size: 16px;
+    }
+    .company-header{
+        margin-right: 20px;
+    }
+    h2{
+        font-size: 26px;
+        margin-bottom: 15px;
+    }
+    .section2{
+        margin-top: 130px;
+    }
+    .block1_photos img{
+        width: 100px;
+        margin-right: 0px;
+    }
+    .block1_photo{
+        margin-right: 10px;
+    }
+    .block1_photos{
+        margin-top: 20px;
+    }
+    .feature-item-photo{
+        min-width: 90px;
+    }
+    .feature-item{
+        margin-top: 40px;
+    }
+    .block2{
+        margin-top: 120px;
+    }
+    .consolelog_phones img{
+        width: 140px;
+    }
+    .consolelog_content a{
+        width: 160px;
+        height: 45px;
+    }
+    .consolelog_content p{
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .phone2{
+        margin-top: 0;
+        margin-left: 20px;
+    }
+    .feature-content{
+        margin-left: 25px;
+    }
+    .feature-item_title{
+        margin-bottom: 0;
+        font-size: 19px;
+    }
+    .block1_content p{
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .download-header{
+        width: 160px;
+        padding-top: 18px;
+        padding-bottom: 18px;
+        margin-right: 30px;
+    }
+    .commits_title{
+        font-size: 32px;
+        margin-bottom: 15px;
+        width: 280px;
+        line-height: 42px;
+    }
+    .commits_text{
+        width: 320px;
+        font-size: 12px;
+        line-height: 24px;
+    }
+    .commits_box{
+        margin-top: 40px;
+        height: 300px;
+    }
+    .version{
+        font-size: 12px;
+        margin-top: 22px;
+        margin-left: 15px;
+    }
+    .commits_box h4{
+        font-size: 18px;
+    }
+    .arrow-version{
+        left: 50px;
+        top:10px;
+        width: 140px;
+        height: 40px;
+    }
+    .arrow-version:after{
+        left: calc(50% - 13px);
+        border-top-width: 15px;
+        border-left-width: 15px;
+        border-right-width: 15px;
+    }
+    .transform-active-version2{
+        transform: translate(140px, 0);
+        width: 120px;
+    }
+    .commit_name{
+        font-size: 10px;
+    }
+    .commit_number{
+        font-size: 10px;
+    }
+    .commits_box__left{
+        padding-left: 15px;
+    }
+    .commits_box__right{
+        padding-left: 15px;
+    }
+    .invitation_title{
+        font-size: 32px;
+        width: 320px;
+        margin-bottom: 15px;
+    }
+    .invite{
+        margin-top: 30px;
+    }
+    #email{
+        font-size: 14px;
+        width: 200px;
+        height: 45px;
+    }
+    #email::placeholder{
+        font-size: 14px;
+    }
+    #send_button{
+        font-size: 14px;
+        height: 45px;
+        width: 90px;
+    }
+    .torelease span{
+        font-size: 14px;
+    }
+    .arrow-right{
+        width: 23px;
+        margin-bottom: -1px;
+    }
+    .torelease{
+        margin-top: 30px;
+    }
+    .invitation_photos img{
+        width: 300px;
+    }
+    .invitation_text{
+        font-size: 12px;
+        width: 320px;
+    }
+    .menu-footer_item:nth-of-type(4){
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    .menu-footer_item{
+        margin-top: 20px;
+    }
+    footer{
+        padding-top: 200px;
+    }
+    .menu-footer a{
+        font-size: 16px;
+    }
+    .menu-footer_item:nth-of-type(3){
+        margin-top: 20px;
+    }
+    .logo-copy{
+        margin-top: 30px;
+    }
+    .menu-footer{
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+    .menu-footer h5{
+        margin-bottom: 20px;
+        margin-top: 0;
+    }
+    .menu-footer_item:nth-of-type(2){
+        margin-left: 0;
+    }
+}
+@media only screen and (max-width:360px){
+    .popup{
+        width: 280px;
+        padding: 20px;
+        height: 450px;
+    }
+    .popup input{
+        height: 50px;
+    }
+    .container{
+        width: 280px;
+    }
+    h1{
+        font-size: 26px;
+        line-height: 36px;
+    }
+    p{
+        width: 280px;
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .buttons-header{
+        margin-bottom: 60px;
+    }
+    .download-header{
+        margin-right: 20px;
+        width: 140px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    div.company-header:last-of-type{
+        margin-right: 0;
+    }
+    a.company-header{
+        display: block;
+    }
+    .company-header img{
+        width: 90%;
+    }
+    .feature-item{
+        flex-direction: column;
+    }
+    .section3{
+        margin-top: 140px;
+    }
+    .consolelog_content p{
+        width: 270px;
+    }
+    .feature-item-photo{
+        width: 100px;
+        margin-bottom: 10px;
+    }
+    .feature-content{
+        margin-left: 0;
+    }
+    .block2{
+        margin-top: 100px;
+    }
+    .block1_photos{
+        margin-top: 15px;
+    }
+    .block1_photos img{
+        width: 80px;
+    }
+    .commits_text{
+        width: 280px;
+        line-height: 24px;
+        font-size: 14px;
+    }
+    .invitation_photos img{
+        width: 280px;
+    }
+    .invitation_text{
+        width: 280px;
+        line-height: 20px;
+    }
+    .torelease{
+        margin-top: 20px;
+    }
+    .commits_box h4{
+        font-size: 16px;
+    }
+    .version{
+        margin-top: 15px;
+        width: 80px;
+        margin-left: 30px;
+    }
+    .arrow-version{
+        width: 100px;
+        left: 55px;
+    }
+    .commits_box__right h4{
+        margin-bottom: 20px;
+    }
+    .transform-active-version2{
+        width: 100px;
+        transform: translateX(105px);
+    }
+    .invite{
+        margin-top: 20px;
+    }
+    .torelease span{
+        font-size: 13px;
+    }
+    footer{
+        padding-top: 150px;
+    }
+    .invitation_title{
+        width: 280px;
+        font-size: 28px;
+    }
+}
+
+.transformY0{
+    transform: translateY(0);
+}
+.burger:hover .burger-top{
+    background-color: #3495ff;
+}
+.burger:hover .burger-bottom{
+    background-color: #3495ff;
+}
+.download-header:hover{
+    box-shadow:  0px 0px 0px 2px #3495ff inset, 0px 0px 0px 4px #fff inset;
+}
+.download-header:active{
+    filter: brightness(1.2);
+}
+.button{
+    box-shadow:  0px 0px 0px 2px #3495ff inset, 0px 0px 0px 4px #3495ff inset;
+    transition: .2s;
+    display: block;
+}
+.button:hover{
+    box-shadow:  0px 0px 0px 2px #3495ff inset, 0px 0px 0px 4px #fff inset;
+}
+.button:active{
+    filter: brightness(1.2);
+}
+#email:hover{
+    border-color: #1e375a;
+}
+#email:focus{
+    border-color: #3495ff;
+}
+.footer a:hover{
+    color: #3495ff;
+    transition: .1s;
+}
+.arrow-right{
+    animation: arrow-right 2s infinite forwards;
+    animation-play-state: paused;
+}
+.torelease:hover .arrow-right{
+    animation-play-state: running;
+}
+@keyframes arrow-right {
+    0%{
+        transform: translateX(0px);
+    }
+    15%{
+        transform: translateX(10px);
+    }
+    30%{
+        transform: translateX(0px);
+    }
+    45%{
+        transform: translateX(10px);
+    }
+    60%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+.hover-link:before{
+    background-color: #d4e9ff;
+    height: 5px;
+    width: 100%;
+    transition: .2s;
+    content: '';
+    position: absolute;
+    border-radius: 5px;
+    left:0;
+    transform: translateY(15px);
+    z-index: 1;
+    bottom: 3px;
+}
+.hover-link:hover:before{
+    transform: translateY(2px);
+}
+.hover-link{
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+.hover-link1:after{
+    content: 'Testflight';
+    position: absolute;
+    z-index: 2;
+    left: 0;
+}
+.hover-link2:before{
+    height: 7px;
+    transform: translateY(45px);
+}
+.hover-link2{
+    overflow: hidden;
+    display: inline-block;
+}
+.hover-link3{
+    overflow: hidden;
+    display: inline-block;
+}
+.hover-link21:after{
+    content: 'Application';
+    position: absolute;
+    z-index: 2;
+    left: 0;
+}
+.hover-link22:after{
+    content: 'Features';
+    position: absolute;
+    z-index: 2;
+    left: 0;
+}
+.hover-link23:after{
+    content: 'Updates';
+    position: absolute;
+    z-index: 2;
+    left: 0;
+}
+.hover-link31:after{
+    content: 'Application';
+    position: absolute;
+    z-index: 2;
+    left: 0;
+}
+.hover-link32:after{
+    content: 'Features';
+    position: absolute;
+    z-index: 2;
+    left: 0;
+}
+.hover-link33:after{
+    content: 'Updates';
+    position: absolute;
+    z-index: 2;
+    left: 0;
+}
+.hover-link2:hover:before{
+    transform: translateY(-5px);
+}
+.popup-hidden{
+    display: none;
+}
+@media only screen and (min-width: 1650px) {
+    .section1{
+        background-size: contain;
+        background-position: 100% 0;
+        background-repeat: no-repeat;
+    }
+}

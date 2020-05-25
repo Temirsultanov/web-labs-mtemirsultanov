@@ -29,7 +29,7 @@ h1{
     font-family: 'Montserrat';
     font-weight: bold;
     color: #505050;
-    font-size: 45px;
+    font-size: 3em;
     text-transform: uppercase;
     text-shadow: 0px 5px 5px #50505091;
 }
@@ -48,7 +48,7 @@ h1 span{
     margin-top: 120px;
     border: 2px solid #505050;
     padding: 10px 20px;
-    font-size: 18px;
+    font-size: 1.2rem;
     transition: .2s;
     color: #222222;
     max-width: 200px; 
@@ -72,7 +72,7 @@ h1 span{
     padding-bottom: 100px;
 }
 h2{
-    font-size: 38px;
+    font-size: 2.2rem;
     font-family: 'Montserrat';
     font-weight: bold;
     text-transform: uppercase;
@@ -102,12 +102,12 @@ h3{
     text-transform: uppercase;
     color: White;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 1.2rem;
     font-family: 'Merriweather';
 }
 .grid p{
     color: white;
-    font-size: 16px;
+    font-size: 1rem;
     font-family: 'Raleway';
 }
 .grid div{
@@ -117,6 +117,8 @@ h3{
     padding-left: 70px;
     padding-right: 70px;
     padding-bottom: 55px;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .box1{
     background-image: url(../image5.png);
@@ -149,12 +151,12 @@ h3{
 }
 @media (max-width: 1200px){
     h1{
-        font-size: 40px;
+        font-size: 2.3rem;
     }
 }
 @media  (max-width: 992px){
     h1{
-        font-size: 32px;
+        font-size: 2rem;
     }
     .grid{
         grid-template-columns: 1fr 1fr;
@@ -172,7 +174,7 @@ h3{
 }
 @media (max-width: 768px){
     h1{
-        font-size: 35px;
+        font-size: 2rem;
     }
     .grid{
         grid-template-columns: 1fr;
@@ -200,4 +202,8 @@ h3{
     .gallery a{
         display: inline-block !important;
     }
+}
+.form{
+    margin-left: 100px;
+    padding-bottom: 100px;
 }

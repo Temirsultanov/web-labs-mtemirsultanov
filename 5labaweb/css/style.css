@@ -194,6 +194,9 @@ h3{
     header.header{
         display: none !important; 
     }
+    .mainscreen__button{
+        display: none;
+    }
     .gallery a img{
         width: 5cm;
     }
